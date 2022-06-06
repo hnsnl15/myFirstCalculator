@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitas Calculator | Make your life easy!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main-section">
+        <div class="title-calculator">
+            <div id="clear">
+                <button type="button" class="btn" id="btn-clear-input">CLEAR</button>
+            </div>
+            <h1>FRUITAS</h1>
+            <button class="exitBtn" onclick="hideHistoryArea()" onclick="showHistoryArea()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="exit" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+            </button>
+            <button type="button" class="window-btn-history" onclick="showHistoryArea()" onclick="hideHistoryArea()">History</button>
+        </div>
+        <section class="calculator-container">
+            <div class="history">
+                <h1>History</h1>
+                <button type="button" class="clr-history-btn">Clear history</button>
+                <ul id="history-logs"></ul>
+            </div>
+            <form action="#">
+                    <div id="screen"></div>
+                    <div id="answer-area"></div>
+                    <div class="button-area">
+                        <button type="button" class="button-1 btn-light btn">1</button>
+                        <button type="button" class="button-2 btn-light btn">2</button>
+                        <button type="button" class="button-3 btn-light btn">3</button>
+                        <button type="button" class="button-4 btn-light btn">4</button>
+                        <button type="button" class="button-5 btn-light btn">5</button>
+                        <button type="button" class="button-6 btn-light btn">6</button>
+                        <button type="button" class="button-7 btn-light btn">7</button>
+                        <button type="button" class="button-8 btn-light btn">8</button>
+                        <button type="button" class="button-9 btn-light btn">9</button>
+                        <button type="button" class="button-0 btn-light btn">0</button>
+                        <button type="button" class="button-period btn-light btn">.</button>
+                        <button type="button" class="button-plus btn-light btn">+</button>
+                        <button type="button" class="button-minus btn-light btn">-</button>
+                        <button type="button" class="button-multiply btn-light btn">*</button>
+                        <button type="button" class="button-division btn-light btn">/</button>
+                        <button type="button" class="button-equals btn">=</button>
+                        <button type="button" class="button-modulo btn-light btn">%</button>
+                        <button type="button" class="button-clear btn">C</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
