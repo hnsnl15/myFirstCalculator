@@ -37,13 +37,6 @@ buttonCollections.map(buttonCollection => {
                 buttonCollections[0].style.visibility = 'visible';
                 break;
             }
-
-            if(display.innerText == '+') {
-                function add() {
-                    
-                }
-            }
-
             // Script for History Logs
             let resultLog = (`${display.innerText} = ${eval(historyArea.innerText)}`)
 
@@ -62,10 +55,10 @@ buttonCollections.map(buttonCollection => {
                     let createNewList = document.createElement('li');
                         createNewList.textContent = logs;
                     let logHistoryLists = document.querySelector('#history-logs');
-    
                     logHistoryLists.appendChild(createNewList);
-                }
-            }
+                    return createNewList;
+                };
+            } 
         })
     })
 

@@ -27,7 +27,6 @@ body {
 }
 /* HISTORY WHEN TOGGLED IN CSS */
 .history {
-    display: flex;
     flex-direction: column;
     padding: 20px 40px;
     position: absolute;
@@ -40,7 +39,7 @@ body {
     transform-origin: right;
     transform: translateX(485px);
     transition: all 0ms ease-in-out;
-    opacity: 0;
+    display: none;
     z-index: 1;
     font-size: 2rem;
     line-height: 2;
@@ -48,7 +47,7 @@ body {
     overflow-x: none;
 }
 .display-history {
-    opacity: 1;
+    display: flex;
     transform: translateX(0px);
 }
 .show-history {
